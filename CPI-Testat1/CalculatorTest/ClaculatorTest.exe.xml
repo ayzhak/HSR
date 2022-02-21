@@ -1,0 +1,21 @@
+<testsuites>
+	<testsuite name="AllTests" tests="13">
+		<testcase classname="AllTests" name="testOnePlusOne"/>
+		<testcase classname="AllTests" name="testTwoMinusOne"/>
+		<testcase classname="AllTests" name="testFourTimesThree"/>
+		<testcase classname="AllTests" name="testEightDevidedBy4"/>
+		<testcase classname="AllTests" name="testTenModulo3"/>
+		<testcase classname="AllTests" name="testCalcWithStream"/>
+		<testcase classname="AllTests" name="test_printLargeDigit_5"/>
+		<testcase classname="AllTests" name="test_printLargeDigit_underflow"/>
+		<testcase classname="AllTests" name="test_printLargeDigit_overflow"/>
+		<testcase classname="AllTests" name="test_printLargeNumber_plus"/>
+		<testcase classname="AllTests" name="test_printLargeNumber_minus"/>
+		<testcase classname="AllTests" name="test_printLargeError"/>
+		<testcase classname="AllTests" name="pocketcalculator_emptyInput">
+			<failure message="..\src\Test.cpp:79 pocketcalculator_emptyInput: &quot;&quot; == out.str() expected:		but was:	 -             \n|              \n -  -  -  -  - \n|  |  |  | ||  \n -        -    \n	">
+pocketcalculator_emptyInput: &quot;&quot; == out.str() expected:		but was:	 -             \n|              \n -  -  -  -  - \n|  |  |  | ||  \n -        -    \n	
+			</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

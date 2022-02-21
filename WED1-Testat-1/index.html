@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8"/>
+    <title>Stein, Schere, Papier, Brunnen, Streichholz</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Isaac Würth, iwuerth@hsr.ch"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="js/Controller/GlobalErrorHandler.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <script id="gameButtonTemplate" type="text/x-handlebars-template">
+        {{#each @this}}
+            <button value="{{@this}}">
+                <span class="gameButtonSpace"></span>{{this}}
+            </button>
+        {{/each}}
+    </script>
+
+
+    <script id="rankingTemplate" type="text/x-handlebars-template">
+        {{#each @this}}
+            {{#if newRank}}<li>Rang mit {{win}} siegen</li>{{/if}}
+            {{user}}<br>
+        {{/each}}
+    </script>
+
+    <script id="historyEntryTemplate" type="text/x-handlebars-template">
+        <tr data-result="{{result}}">
+            <td>{{result}}</td>
+            <td>{{playerHand1}}</td>
+            <td>{{playerHand2}}</td>
+        </tr>
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Stein, Schere, Papier, Brunnen, Streichholz</h1>
+    </header>
+
+    <nav id="systemSwitchNav" hidden>
+        <button id="systemSwitchButton" type="button" name="switch-system">Zum Server wechseln</button>
+   </nav>
+
+    <main id="gameMain">
+        <section id="rankingSection" hidden>
+            <h2>Ranking</h2>
+            <ol id="rankingListOl">
+            </ol>
+        </section>
+
+        <div id="loaderDiv"></div>
+
+        <section id="gameSection" hidden>
+            <h2>Let's play</h2>
+            <p id="gameBeforeButtonsP"></p>
+            <p id="gameButtonsP" ></p>
+            <p id="gameBeforeResultP">VS</p>
+            <p id="gameResultP">?</p>
+            <button id="gameBackToRankingButton">Zurück zum Ranking</button>
+        </section>
+
+        <div id="horizontalLine" hidden></div>
+
+        <section id="gameNewPlayerSection" hidden>
+            <h2>Starte ein neues Spiel</h2>
+            <form id="gameNewPlayerForm">
+                <input id="playerNameInput" minlength="2" type="text" placeholder="Player name" required/>
+                <button id="startGameButton" type="submit" name="play-game">Starte Game</button>
+            </form>
+        </section>
+
+        <section id="gameHistorySection" hidden>
+            <h2>History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resultat</th>
+                        <th>Spieler</th>
+                        <th>Gegner</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+        <section id="errorSection" hidden>
+            <h2>ERROR</h2>
+            <p>Seite neuladen</p>
+            <p id="errorReason"></p>
+        </section>
+    </main>
+
+    <footer>
+        Created by Isaac
+    </footer>
+    <div hidden>
+        <script src="js/Model/ServerEndpoint.js"></script>
+        <script src="js/Model/LocalEndpoint.js"></script>
+        <script src="js/Model/Game.js"></script>
+        <script src="js/View/ViewConst.js"></script>
+        <script src="js/View/ViewHelper.js"></script>
+        <script src="js/View/View.js"></script>
+
+        <script src="js/Controller/EventsController.js"></script>
+    </div>
+</body>
+</html>

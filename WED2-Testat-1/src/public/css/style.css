@@ -1,0 +1,309 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  max-width: 70em;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+}
+
+/**
+ * Night theme
+ */
+
+body.night {
+  background: black;
+  color: white;
+}
+
+.night button,
+.night select {
+  border-radius: 5px;
+  background: darkblue;
+  border: grey solid 1px;
+  color: white;
+}
+
+.night button:hover,
+.night select:hover {
+  color: white;
+  background: blue;
+  border: white solid 1px;
+}
+.night .selected-button {
+  background: aqua;
+  color: black;
+}
+
+/**
+ * Buttons und forms
+ */
+
+form {
+  margin: 0;
+}
+
+.selected-button {
+  background: lightblue;
+}
+
+button {
+  border-radius: 5px;
+  background: white;
+  border: grey solid 1px;
+  color: black;
+}
+
+button:hover {
+  background: lightgray;
+  border: black solid 1px;
+}
+
+/**
+ * Star
+ */
+.unchecked-star {
+  font-size: 22px;
+}
+
+.checked-star {
+  font-size: 22px;
+  color: darkgoldenrod;
+}
+
+[type="checkbox"] {
+  margin-right: 5px;
+}
+
+#task-empty {
+  text-align: center;
+  font-size: 50px;
+}
+
+nav {
+  display: grid;
+  grid-gap: 2px;
+}
+
+.task {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 100px 3fr 3fr 100px;
+  grid-gap: 2px;
+}
+
+.edit {
+  display: grid;
+  grid-gap: 10px;
+}
+
+/**
+ * Grid
+ */
+
+@media only screen and (min-width: 950px) {
+  nav {
+    grid-template:
+      "optioncreate . . . changetheme" 60px
+      "sortcreatedate sortfinished sortpriority . filterfinished" 60px
+      / 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .task {
+    grid-template:
+      "due title priority options" 1fr
+      "finished description description options" 6fr
+      / 150px 3fr 3fr 200px;
+  }
+
+  .edit {
+    grid-template-columns: 1fr 4fr;
+    justify-items: end;
+    align-items: center;
+  }
+
+  .edit > .action-buttons {
+    width: 100%;
+  }
+
+  .edit > .finished {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 950px) and (min-width: 750px) {
+  nav {
+    grid-template:
+      "optioncreate . . changetheme" 60px
+      "sortcreatedate sortfinished sortpriority filterfinished" 60px
+      / 1fr 1fr 1fr 1fr;
+  }
+
+  .task {
+    grid-template:
+      "due title priority ." 1fr
+      "finished description description options" 6fr
+      / 150px 3fr 3fr 200px;
+  }
+
+  .edit {
+    grid-template-columns: 1fr 4fr;
+    justify-items: end;
+    align-items: center;
+  }
+  .edit > .action-buttons {
+    justify-items: left;
+  }
+
+  .edit > .action-buttons {
+    width: 100%;
+  }
+
+  .edit > .finished {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 550px) {
+  nav {
+    grid-template:
+      "optioncreate . changetheme" 60px
+      "sortcreatedate sortfinished sortpriority" 60px
+      ". . filterfinished" 60px
+      / 1fr 1fr 1fr;
+  }
+
+  .task {
+    grid-template:
+      "due title priority" 1fr
+      "finished description description" 2fr
+      "options options options" 1fr
+      / 150px 3fr 3fr;
+  }
+
+  .task button {
+    min-height: 35px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  nav {
+    grid-template:
+      "optioncreate changetheme" 30px
+      "sortcreatedate sortcreatedate" 30px
+      "sortfinished sortfinished" 30px
+      "sortpriority sortpriority " 30px
+      "filterfinished filterfinished " 30px
+      / 1fr 1fr;
+  }
+
+  .task {
+    grid-gap: 10px;
+    grid-template:
+      "title . due" 10px
+      "finished . priority" 20px
+      "description description description" 2fr
+      "options options options" 1fr;
+  }
+
+  .task button {
+    min-height: 35px;
+  }
+
+  .task-due {
+    justify-self: end;
+  }
+}
+
+nav > .create {
+  grid-area: optioncreate;
+}
+
+nav > .change-theme {
+  grid-area: changetheme;
+}
+
+nav > .sort-finished {
+  grid-area: sortfinished;
+}
+
+nav > .sort-createdate {
+  grid-area: sortcreatedate;
+}
+
+nav > .sort-priority {
+  grid-area: sortpriority;
+}
+
+nav > .filter-finished {
+  grid-area: filterfinished;
+}
+
+nav button {
+  height: 100%;
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  margin-left: 3px;
+  vertical-align: middle;
+}
+
+.task-due {
+  grid-area: due;
+}
+
+.task-title {
+  grid-area: title;
+}
+
+.task-priority {
+  justify-self: end;
+  grid-area: priority;
+}
+
+.task-finished-state {
+  justify-self: start;
+  grid-area: finished;
+}
+
+.task-description {
+  padding: 3px;
+  background: inherit;
+  color: inherit;
+  grid-area: description;
+}
+
+.task-options {
+  grid-area: options;
+}
+
+.task-options > form:first-child {
+  margin-bottom: 2px;
+}
+.task-options button {
+  height: calc(50% - 1px);
+  width: 100%;
+}
+
+.edit {
+  font-weight: bold;
+}
+
+.edit > input,
+.edit textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+}
+.edit button {
+  height: 40px;
+  width: calc(50% - 1px);
+  marginleft: 1px;
+}
+

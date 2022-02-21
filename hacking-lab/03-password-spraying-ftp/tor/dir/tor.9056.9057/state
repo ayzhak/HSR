@@ -1,0 +1,34 @@
+# Tor state file last generated on 2021-03-11 14:45:05 local time
+# Other times below are in UTC
+# You *do not* need to edit this file.
+
+CircuitBuildTimeBin 375 1
+CircuitBuildTimeBin 425 2
+CircuitBuildTimeBin 475 1
+CircuitBuildTimeBin 525 1
+CircuitBuildTimeBin 575 1
+CircuitBuildTimeBin 725 1
+Dormant 0
+Guard in=default rsa_id=01FF9C8571D1C09FA8D2ACCE727D5530FEC10038 nickname=RS1Lselectel sampled_on=2021-03-07T03:49:29 sampled_idx=0 sampled_by=0.4.5.5-rc listed=1 confirmed_on=2021-03-07T18:51:25 confirmed_idx=0 pb_circ_attempts=8.000000 pb_circ_successes=7.000000 pb_successful_circuits_closed=7.000000
+Guard in=default rsa_id=FFA72BD683BC2FCF988356E6BEC1E490F313FB07 nickname=Lule sampled_on=2021-02-28T17:12:09 sampled_idx=1 sampled_by=0.4.5.5-rc listed=1 confirmed_on=2021-03-06T17:59:26 confirmed_idx=1
+Guard in=default rsa_id=724B5C101440DEF2C3F7348074D8CFABE614C6C5 nickname=Unnamed sampled_on=2021-03-01T19:37:20 sampled_idx=2 sampled_by=0.4.5.5-rc listed=1 confirmed_on=2021-03-04T08:21:39 confirmed_idx=2
+Guard in=default rsa_id=18F34AE6567F5FB081C4353D5EDA5CEE155810C4 nickname=homez sampled_on=2021-03-07T13:01:30 sampled_idx=3 sampled_by=0.4.5.5-rc listed=1
+Guard in=default rsa_id=91BA193FB362FB7B6679A7A83A3050F3C44A5468 nickname=324partyvan sampled_on=2021-03-11T00:56:27 sampled_idx=4 sampled_by=0.4.5.5-rc listed=1
+Guard in=default rsa_id=D1F2C5C820B3F96BE6144CBFB84FDDF9D0EC0810 nickname=t4cc0reTor5 sampled_on=2021-03-07T00:55:29 sampled_idx=5 sampled_by=0.4.5.5-rc listed=1
+Guard in=default rsa_id=889944F540C155E7E32C909B9E1424677689AD4D nickname=Mowgli sampled_on=2021-03-04T01:19:27 sampled_idx=6 sampled_by=0.4.5.5-rc listed=1
+Guard in=default rsa_id=9DB400402B545DC41DE342E14644F74B7DA4F789 nickname=bachforever sampled_on=2021-03-07T22:53:08 sampled_idx=7 sampled_by=0.4.5.5-rc listed=1
+Guard in=default rsa_id=4099DEA68268A5ED261078DE1734891334A146F9 nickname=arighttospeak sampled_on=2021-02-28T17:35:52 sampled_idx=8 sampled_by=0.4.5.5-rc listed=1
+Guard in=default rsa_id=7992F172EDBE69B99F0190651BAC14DD0FD9E5C8 nickname=Unnamed sampled_on=2021-02-28T21:58:56 sampled_idx=9 sampled_by=0.4.5.5-rc listed=1
+Guard in=default rsa_id=03E0F4EE272731601773F48E64240D3A8896A5E3 nickname=chapterOne sampled_on=2021-03-02T09:23:41 sampled_idx=10 sampled_by=0.4.5.5-rc listed=1
+Guard in=default rsa_id=C1939D36649DE98A202429631D8EFC70128D5F5F nickname=rinderwahnRelay10L sampled_on=2021-03-04T07:17:07 sampled_idx=11 sampled_by=0.4.5.5-rc listed=1
+Guard in=default rsa_id=36EFABA1FFE1D0246B36C141F9226F4F09B8951C nickname=tor02aditaa sampled_on=2021-03-11T00:36:11 sampled_idx=12 sampled_by=0.4.5.5-rc listed=1
+Guard in=default rsa_id=6DCED82B701D323120811DF58D350DD26BF9CB25 nickname=Chenjesu2 sampled_on=2021-03-09T13:55:07 sampled_idx=13 sampled_by=0.4.5.5-rc listed=1
+Guard in=default rsa_id=C64EB4553AA308D8FBC314D73B44178E4CB11C35 nickname=privexrelayde1 sampled_on=2021-02-27T21:58:39 sampled_idx=14 sampled_by=0.4.5.5-rc listed=1
+Guard in=default rsa_id=B2D03CDF45EB4D74A65FAC4F00EBA785C9663A5F nickname=Unnamed sampled_on=2021-03-02T05:47:37 sampled_idx=15 sampled_by=0.4.5.5-rc listed=1
+Guard in=default rsa_id=360ADF5ACF5FC0CA0A6E678FB407B0B468278139 nickname=nodvrelay20 sampled_on=2021-03-02T18:48:55 sampled_idx=16 sampled_by=0.4.5.5-rc listed=1
+Guard in=default rsa_id=FB016E16B8CD7A0E53DEEF31ED8754E4F6B8E837 nickname=LittleBits sampled_on=2021-03-01T22:39:06 sampled_idx=17 sampled_by=0.4.5.5-rc listed=1
+Guard in=default rsa_id=B25427A8F4A485E03EDA31757AB1C33DBE587428 nickname=DefinitelyNotTheFBI sampled_on=2021-03-05T19:34:43 sampled_idx=18 sampled_by=0.4.5.5-rc listed=1
+Guard in=default rsa_id=890480E14E634C8B4467C475E355A6FBF3D99CD5 nickname=ilovecreampies sampled_on=2021-03-08T18:32:38 sampled_idx=19 sampled_by=0.4.5.5-rc listed=1
+LastWritten 2021-03-11 13:45:05
+TorVersion Tor 0.4.5.5-rc
+TotalBuildTimes 7

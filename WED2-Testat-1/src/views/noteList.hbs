@@ -1,0 +1,65 @@
+<nav>
+    <form action="/create" method="get">
+        <button type="submit">Create</button>
+    </form>
+    <form class="change-theme">
+        <input type='text' id="theme" name="theme" value="{{nextTheme}}" hidden>
+        <button type="submit">Change to {{nextTheme}}</button>
+    </form>
+
+    <form  class="sort-createdate">
+        <input type='text' name="sortedby" value="createdate" hidden>
+        <input type='text' name="desc" value="{{#if (and (eq sortedby 'createdate') desc)}}false{{else}}true{{/if}}" hidden>
+        <button type="submit" class="{{#if (eq sortedby 'createdate')}}selected-button{{/if}}">
+            By create date {{#if (eq sortedby 'createdate')}}{{#if desc}}▲{{else}}▼{{/if}}{{/if}}
+        </button>
+    </form>
+
+    <form  class="sort-finished">
+        <input type='text' name="sortedby" value="due" hidden>
+        <input type='text' name="desc" value="{{#if (and (eq sortedby 'due') desc)}}false{{else}}true{{/if}}" hidden>
+        <button type="submit" class="{{#if (eq sortedby 'due')}}selected-button{{/if}}">
+            By due date {{#if (eq sortedby 'due')}}{{#if desc}}▲{{else}}▼{{/if}}{{/if}}
+        </button>
+    </form>
+
+    <form class="sort-priority">
+        <input type='text' name="sortedby" value="priority" hidden>
+        <input type='text' name="desc" value="{{#if (and (eq sortedby 'priority') desc)}}false{{else}}true{{/if}}" hidden>
+        <button type="submit" class="{{#if (eq sortedby 'priority')}}selected-button{{/if}}">
+            By priority {{#if (eq sortedby 'priority')}}{{#if desc}}▲{{else}}▼{{/if}}{{/if}}
+        </button>
+    </form>
+
+    <form class="filter-finished">
+        <input type='text' name="hidefinished" value="{{#if hidefinished}}false{{else}}true{{/if}}" hidden>
+        <button type="submit" class="{{#if hidefinished}}selected-button{{/if}}">
+            {{#if hidefinished}}Show all{{else}}Only unfinished{{/if}}
+        </button>
+    </form>
+</nav>
+<article id="grid">
+    <hr>
+    {{#each list}}
+        <section class="task">
+            <span class="task-due">{{monthToText due}}</span>
+            <span class="task-title">{{title}}</span>
+            <span class="task-priority">{{{createStars priority 5 'right'}}}</span>
+            <span class="task-finished-state"><input type="checkbox"{{#if (isNotUndefinedOrEmptyString finished)}} checked{{/if}} disabled value="finishedTask">
+                <label for="finishedTask">Finished</label>
+            </span>
+            <textarea class="task-description"disabled cols="7">{{description}}</textarea>
+            <span class="task-options">
+                <form action="/edit/{{_id}}">
+                    <button type="submit" >Edit</button>
+                </form>
+                <form action="/delete/{{_id}}?_method=DELETE" method="post">
+                    <button type="submit">Delete</button>
+                </form>
+            </span>
+        </section>
+        <hr>
+    {{else}}
+        <section id="task-empty">⚡ No items ⚡</section>
+    {{/each}}
+</article>

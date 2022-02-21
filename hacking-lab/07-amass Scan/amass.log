@@ -1,0 +1,100 @@
+15:28:27.135225 AlienVault: API key data was not provided
+15:28:27.135607 BinaryEdge: check callback failed for the configuration
+15:28:27.136195 C99: check callback failed for the configuration
+15:28:27.136217 CIRCL: check callback failed for the configuration
+15:28:27.136240 Chaos: check callback failed for the configuration
+15:28:27.136264 Cloudflare: API key data was not provided
+15:28:27.136314 DNSDB: API key data was not provided
+15:28:27.137839 DNSDB: check callback failed for the configuration
+15:28:27.136426 FacebookCT: check callback failed for the configuration
+15:28:27.136442 GitHub: check callback failed for the configuration
+15:28:27.136475 NetworksDB: API key data was not provided
+15:28:27.136494 PassiveTotal: check callback failed for the configuration
+15:28:27.136849 ReconDev: check callback failed for the configuration
+15:28:27.136894 SecurityTrails: check callback failed for the configuration
+15:28:27.137294 Shodan: check callback failed for the configuration
+15:28:27.137394 Spyse: check callback failed for the configuration
+15:28:27.137427 ThreatBook: check callback failed for the configuration
+15:28:27.137460 Twitter: API key data was not provided
+15:28:27.137923 Twitter: check callback failed for the configuration
+15:28:27.137496 URLScan: API key data was not provided
+15:28:27.137503 Umbrella: API key data was not provided
+15:28:27.137940 Umbrella: check callback failed for the configuration
+15:28:27.137522 WhoisXML: API key data was not provided
+15:28:27.137955 WhoisXML: check callback failed for the configuration
+15:28:27.137560 ZETAlytics: check callback failed for the configuration
+15:28:27.137572 ZoomEye: check callback failed for the configuration
+15:28:34.645930 Querying HackerOne for compass-security.com subdomains
+15:28:34.646136 Querying AlienVault for compass-security.com subdomains
+15:28:34.646144 Querying HackerTarget for compass-security.com subdomains
+15:28:34.646154 Querying Anubis for compass-security.com subdomains
+15:28:34.646160 Querying ArchiveIt for compass-security.com subdomains
+15:28:34.646169 Querying IPv4Info for compass-security.com subdomains
+15:28:34.646175 Querying ArchiveToday for compass-security.com subdomains
+15:28:34.646200 Querying Ask for compass-security.com subdomains
+15:28:34.646206 Querying Baidu for compass-security.com subdomains
+15:28:34.646232 Querying Bing for compass-security.com subdomains
+15:28:34.646237 Querying Mnemonic for compass-security.com subdomains
+15:28:34.646246 Querying Brute Forcing for compass-security.com subdomains
+15:28:34.646252 Querying RapidDNS for compass-security.com subdomains
+15:28:34.646260 Querying Riddler for compass-security.com subdomains
+15:28:34.646265 Querying Robtex for compass-security.com subdomains
+15:28:34.646270 Querying BufferOver for compass-security.com subdomains
+15:28:34.646278 Querying BuiltWith for compass-security.com subdomains
+15:28:34.646283 Querying Censys for compass-security.com subdomains
+15:28:34.646291 Querying CertSpotter for compass-security.com subdomains
+15:28:34.646296 Querying CommonCrawl for compass-security.com subdomains
+15:28:34.646322 Querying Crtsh for compass-security.com subdomains
+15:28:34.646346 Querying SiteDossier for compass-security.com subdomains
+15:28:34.646376 Querying DNSDumpster for compass-security.com subdomains
+15:28:34.646381 Querying GoogleCT for compass-security.com subdomains
+15:28:34.649072 Querying SonarSearch for compass-security.com subdomains
+15:28:34.649085 Querying Sublist3rAPI for compass-security.com subdomains
+15:28:34.649091 Querying ThreatCrowd for compass-security.com subdomains
+15:28:34.649100 Querying ThreatMiner for compass-security.com subdomains
+15:28:34.649106 Querying URLScan for compass-security.com subdomains
+15:28:34.649114 Querying VirusTotal for compass-security.com subdomains
+15:28:34.649120 Querying Wayback for compass-security.com subdomains
+15:28:34.649128 Querying Yahoo for compass-security.com subdomains
+15:28:34.649134 Querying HackerOne for hacking-lab.com subdomains
+15:28:34.649143 Querying Pastebin for compass-security.com subdomains
+15:28:34.649162 Querying IPv4Info for hacking-lab.com subdomains
+15:28:34.649173 Querying Brute Forcing for hacking-lab.com subdomains
+15:28:34.649179 Querying HackerTarget for hacking-lab.com subdomains
+15:28:34.649188 Querying Anubis for hacking-lab.com subdomains
+15:28:34.649193 Querying BufferOver for hacking-lab.com subdomains
+15:28:34.649202 Querying Riddler for hacking-lab.com subdomains
+15:28:34.649207 Querying Mnemonic for hacking-lab.com subdomains
+15:28:34.649212 Querying CertSpotter for hacking-lab.com subdomains
+15:28:34.649220 Querying Robtex for hacking-lab.com subdomains
+15:28:34.649225 Querying Sublist3rAPI for hacking-lab.com subdomains
+15:28:34.649233 Querying SiteDossier for hacking-lab.com subdomains
+15:28:34.649238 Querying SonarSearch for hacking-lab.com subdomains
+15:28:34.649247 Querying Bing for hacking-lab.com subdomains
+15:28:39.649269 Querying Pastebin for hacking-lab.com subdomains
+15:28:39.651971 Querying DNSDumpster for hacking-lab.com subdomains
+15:28:39.652029 Querying ArchiveToday for hacking-lab.com subdomains
+15:28:39.652035 Querying GoogleCT for hacking-lab.com subdomains
+15:28:44.666749 Querying Wayback for hacking-lab.com subdomains
+15:28:44.669376 Querying RapidDNS for hacking-lab.com subdomains
+15:28:49.669420 Querying Censys for hacking-lab.com subdomains
+15:28:54.687711 Querying VirusTotal for hacking-lab.com subdomains
+15:28:54.687788 Querying ThreatCrowd for hacking-lab.com subdomains
+15:28:54.687798 Querying AlienVault for hacking-lab.com subdomains
+15:28:54.687806 Querying Ask for hacking-lab.com subdomains
+15:28:54.687817 Querying ThreatMiner for hacking-lab.com subdomains
+15:28:54.687825 Querying BuiltWith for hacking-lab.com subdomains
+15:28:59.690777 URLScan: https://urlscan.io/api/v1/result/e67d9939-7a93-4d4a-82d9-2d94d261d919/: 429 Too Many Requests
+15:28:59.690813 Querying URLScan for hacking-lab.com subdomains
+15:28:59.690821 URLScan: https://urlscan.io/api/v1/result/b9c805ac-de4c-4029-9f62-211a92b63607/: 429 Too Many Requests
+15:29:04.694599 Querying Crtsh for hacking-lab.com subdomains
+15:29:04.695919 Querying ArchiveIt for hacking-lab.com subdomains
+15:29:29.707726 Querying Baidu for hacking-lab.com subdomains
+15:30:09.742412 Querying Yahoo for hacking-lab.com subdomains
+15:30:45.894637 DNS wildcard detected: Resolver 8.8.8.8:53: *.bnd.ost-dc.hacking-lab.com: type: 1
+15:31:39.782053 RADb: https://rdap.arin.net/registry/ip/80.74.154.85: Get "https://rdap.db.ripe.net/ip/80.74.154.85": dial tcp: lookup rdap.db.ripe.net on 192.168.239.2:53: read udp 192.168.239.132:34425->192.168.239.2:53: i/o timeout
+15:31:49.782832 RADb: https://rdap.arin.net/registry/ip/159.89.215.106: Get "https://rdap.arin.net/registry/ip/159.89.215.106": net/http: TLS handshake timeout
+15:33:44.795591 AlienVault: https://otx.alienvault.com/api/v1/indicators/domain/hacking-lab.com/url_list?page=208: Get "https://otx.alienvault.com/api/v1/indicators/domain/hacking-lab.com/url_list?page=208": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+15:36:11.659682 DNS wildcard detected: Resolver 8.8.8.8:53: *.idocker.hacking-lab.com: type: 1
+15:36:59.176263 DNS wildcard detected: Resolver 8.8.8.8:53: *.dfir.compass-security.com: type: 1
+15:42:14.986947 Querying CommonCrawl for hacking-lab.com subdomains

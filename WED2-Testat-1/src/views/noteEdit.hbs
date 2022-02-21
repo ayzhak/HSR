@@ -1,0 +1,25 @@
+<form action="{{action}}" method="post" class="edit">
+    <input name="_id" value="{{query._id}}" hidden>
+
+    <label for="title">Title</label>
+    <input type="text" name="title" id="title" value="{{query.title}}" required>
+
+    <label for="description">Description</label>
+    <textarea rows="7" name="description" id="description">{{query.description}}</textarea>
+
+    <label for="priority">Priority</label>
+    <input type="number" min="0" max="5" name="priority" id="priority" value="{{query.priority}}">
+
+    {{#if showcreateddate}}<label for="createdate">Create date</label>{{/if}}
+    <input type="text" min="0" max="5" name="createdate" id="createdate" value="{{query.createdate}}" readonly {{#if showcreateddate}}{{else}}  hidden{{/if}}>
+
+    <label for="due">Done by</label>
+    <input type="date" name="due" id="due" value="{{query.due}}">
+
+    {{#if showfinished}}
+        <div>{{#if (isNotUndefinedOrEmptyString query.finished)}} Finished: {{query.finished}}{{/if}}</div>
+        <div class="finished"><input type="checkbox" name="finished" id="finished" {{convertToChecked query.finished}}><label for="finished">Finished</label></div>
+    {{/if}}
+    <br>
+    <div class="action-buttons"><button type="submit" >Save</button><button onclick="window.location.href='/'" type="button">Abort</button></div>
+</form>

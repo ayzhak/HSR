@@ -1,0 +1,225 @@
+/*
+# General
+ */
+body {
+    font-family: Arial;
+}
+
+main, nav {
+    width: 600px;
+    margin: 0 auto 0 auto;
+}
+
+main {
+    padding: 10px;
+}
+
+header, footer {
+    margin: 50px 0 20px 0;
+    width: 100%;
+    text-align: center;
+}
+nav button {
+    padding: 20px 0 20px 0;
+}
+
+button {
+    font-size: 15px;
+    text-transform: uppercase;
+
+}
+nav button {
+    width: 100%;
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+ol {
+    padding-inline-start: 0;
+}
+
+table {
+    border-spacing: 0;
+}
+
+/* Loading animation */
+#loaderDiv {
+    border: 50px solid #f3f3f3; /* Light grey */
+    border-top: 50px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/*
+############### RANKING ###############
+ */
+
+#rankingSection {
+    text-align: center;
+}
+
+#rankingListOl {
+    list-style-position: inside;
+}
+
+#rankingListOl > li {
+    font-size: 20px;
+    margin: 25px 0 25px 0;
+    font-weight: bold;
+}
+
+/*
+############### GAME ###############
+Game general
+ */
+#gameSection {
+    margin-bottom: 20px;
+}
+
+#gameSection .playername{
+    font-weight: bold;
+}
+#gameSection button {
+    padding: 20px 0 20px 0;
+}
+
+/* Before game buttons */
+#gameBeforeButtonsP{
+    margin: 20px 0 20px 0;
+}
+
+#gameBeforeButtonsP > span {
+    font-weight: bold;
+}
+
+/* Game buttons */
+#gameButtonsP {
+    margin: 0 auto 0 auto;
+    font-size: 0;
+}
+
+#gameButtonsP button {
+    text-transform: none;
+    letter-spacing: normal;
+    box-sizing: unset;
+    margin: 0;
+    background: none;
+    border: black solid 1px;
+    width: calc(100% / 5);
+    height: 40px;
+}
+#gameButtonsP button:nth-last-child(5):first-child,
+#gameButtonsP button:nth-last-child(5):first-child ~  button {
+    width: calc(100% / 5 - 2px);
+}
+
+.gameButtonSpace::after {
+    content: "\00a0";
+}
+
+#gameButtonsP [data-result] {
+    background-color: #f3f3f3;
+}
+
+/* Before game result */
+
+#gameBeforeResultP{
+    margin: 30px 0 0 0;
+    text-align: center;
+}
+
+#gameResultP{
+    text-align: center;
+    vertical-align: middle;
+    border: black solid 1px;
+    padding: 30px 0 30px 0;
+    width: calc( 100% / 3 );
+    margin: 30px auto 50px auto;
+}
+
+#gameBackToRankingButton {
+    width: calc( 100% / 3 );
+}
+
+/**
+Game Footer: gameNewPlayer
+ */
+
+#gameNewPlayerForm {
+    text-align: center;
+}
+
+#gameNewPlayerForm > input:invalid {
+    border: 1px solid red;
+}
+
+#gameNewPlayerForm > input:focus {
+    border: 1px solid green;
+}
+
+/**
+Game Footer: Game History
+ */
+
+#gameLiveHistory{
+    text-align: center;
+}
+
+#gameHistorySection > table {
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+}
+
+#gameHistorySection > table tr th {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#gameHistorySection > table tr:nth-child(2n) {
+    background: #e2ebfc;
+}
+
+/**
+Error Section
+ */
+
+#errorSection {
+    text-align: center;
+    color: red;
+    font-size: 20px;
+}
+
+#errorSection > h2{
+    font-size: 40px;
+}
+/**
+ Diverses
+ */
+#horizontalLine{
+    height: 10px;
+    background-image: linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 40%, rgb(170, 170, 170) 48.5%, rgb(170, 170, 170) 51.5%, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 100%);
+}
+
+[data-result="✔"] {
+    color: green;
+}
+
+[data-result="✖"] {
+    color: red;
+}
+
+[data-result="="] {
+    color: black;
+}

@@ -1,0 +1,6 @@
+set http.proxy.script jsinject.js
+set https.proxy.script jsinject.js
+http.proxy on
+https.proxy on
+sleep 1
+arp.spoof on

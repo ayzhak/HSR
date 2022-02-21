@@ -1,0 +1,18 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended"],
+  "jsRules": {
+    "class-name": true,
+    "max-line-length": {
+      "options": [120]
+    }
+  },
+  "rules": {
+    "variable-name": [true, "check-format", "allow-leading-underscore"],
+    "max-classes-per-file": [false],
+    "no-console": [false],
+    "comment-format": false,
+    "only-arrow-functions": false
+  },
+  "rulesDirectory": []
+}

@@ -1,0 +1,22 @@
+<testsuites>
+	<testsuite name="AllTests" tests="18">
+		<testcase classname="AllTests" name="test_singleElement_positiveIndex"/>
+		<testcase classname="AllTests" name="test_singleElement_negativeIndex"/>
+		<testcase classname="AllTests" name="test_singleElement_exception_negativeIndex"/>
+		<testcase classname="AllTests" name="test_singleElement_exception_positiveIndex"/>
+		<testcase classname="AllTests" name="test_multipleElement_positiveIndex"/>
+		<testcase classname="AllTests" name="test_multipleElement_negativeIndex"/>
+		<testcase classname="AllTests" name="test_multipleElement_exception_negativeIndex"/>
+		<testcase classname="AllTests" name="test_multipleElement_exception_positiveIndex"/>
+		<testcase classname="AllTests" name="test_multipleElement_front"/>
+		<testcase classname="AllTests" name="test_multipleElement_back"/>
+		<testcase classname="AllTests" name="test_multipleElement_back_equal_back"/>
+		<testcase classname="AllTests" name="test_multipleElement_back_equal_at"/>
+		<testcase classname="AllTests" name="test_multipleElement_back_equal_front"/>
+		<testcase classname="AllTests" name="test_singleElement_MAX_INT"/>
+		<testcase classname="AllTests" name="test_singleElement_MIN_INT"/>
+		<testcase classname="AllTests" name="test_singleElement_TEST_UINT16"/>
+		<testcase classname="AllTests" name="test_singleElement_empty"/>
+		<testcase classname="AllTests" name="test_singleElement_CASELESS_COMPARE"/>
+	</testsuite>
+</testsuites>

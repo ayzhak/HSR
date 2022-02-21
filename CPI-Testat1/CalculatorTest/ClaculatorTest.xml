@@ -1,0 +1,10 @@
+<testsuites>
+	<testsuite name="AllTests" tests="6">
+		<testcase classname="AllTests" name="testOnePlusOne"/>
+		<testcase classname="AllTests" name="testTwoMinusOne"/>
+		<testcase classname="AllTests" name="testFourTimesThree"/>
+		<testcase classname="AllTests" name="testEightDevidedBy4"/>
+		<testcase classname="AllTests" name="testTenModulo3"/>
+		<testcase classname="AllTests" name="testCalcWithStream"/>
+	</testsuite>
+</testsuites>

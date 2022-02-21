@@ -1,0 +1,14 @@
+#include "stdio.h"
+#include <stdlib.h>
+extern char **environ;
+
+void print_env(void)
+{
+    printf("ENVIRON Address: %p\n", &environ);
+}
+
+
+int main(void)
+{
+    print_env();
+}
